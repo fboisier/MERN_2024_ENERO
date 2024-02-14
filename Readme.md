@@ -138,6 +138,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
 ## Class Recordings
 
 - **Lectures (Francisco Boisier)**
+  - [Class 1: Advance JS - Part I](https://drive.google.com/drive/folders/1Y6UPJymOkTDvNG9iTXvDGvAgHIciklmb)
 
 - **Tutorials (Jorge)**
 
