@@ -30,12 +30,13 @@ console.log(counter); // Output: 1
 counter = counter + 1;
 console.log(counter); // Output: 2
 
+
 // II) CONST -> for a variable you won't re-assign
 console.log("----------------------");
 
 const firstName = "John";
 console.log(firstName); // Output: John
-// firstName = "Jane"; // TypeError: Assignment to constant variable.
+firstName = "Jane"; // TypeError: Assignment to constant variable.
 
 // WARNING
 // "const" keyword -> variable cannot be reassigned.
@@ -45,28 +46,40 @@ console.log(firstName); // Output: John
 //                               The reference is the one that remains contant, but propoerties of object
 //                               can be changed.
 
+
 console.log("----------------------");
 const arr_1 = [1, 2, 3];
 arr_1.push(4);
-console.log(arr_1); // Output: [1, 2, 3, 4]
+console.log(arr_1); 
 
 console.log("----------------------");
 const arr_2 = arr_1
 arr_2.push(5);
-console.log(arr_1); // Output: [1, 2, 3, 4, 5]
-console.log(arr_2); // Output: [1, 2, 3, 4, 5]
+console.log(arr_1); 
+console.log(arr_2);
 
 console.log("----------------------");
-
 const arr_3 = Object.assign([], arr_1);
-// arr_3 = [...arr_1];
 arr_2.push(6);
 console.log(arr_1); // Output: [1, 2, 3, 4, 5, 6]
 console.log(arr_3)
-
 
 console.log("----------------------");
 const John = { name: "John", age: 42 };
 console.log(John);
 John.name="Paul";
 console.log(John);
+
+function cosas(direccion){
+    direccion.push(direccion.length);
+}
+
+const numeros = [0];
+
+cosas(numeros);
+cosas(numeros);
+cosas(numeros);
+cosas(numeros);
+cosas(numeros);
+
+console.log(numeros);

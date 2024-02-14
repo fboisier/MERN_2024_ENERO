@@ -26,9 +26,9 @@ console.log("----------------------");
 
 // 1.2) Internally JS when running (hoisting)
 function magic() {
-  var foo; // Declaration of the local variable foo is hoisted to the top of the function
-  foo = "hello world";
-  console.log(foo);
+    var foo; // Declaration of the local variable foo is hoisted to the top of the function
+    foo = "hello world";
+    console.log(foo);
 }
 
 var foo; // Declaration of the global variable foo is hoisted to the top of the scope
@@ -39,24 +39,21 @@ foo = "bar";
 
 console.log(foo); // Output: "bar"
 
-// --------------------------------------------------------------------------------------------
-
 // II) EXAMPLE II
 
 // 1.1) Programmer version
 function print(){
-  console.log("My value is " + x)
+    console.log("My value is " + x)
 }
 
 var x = 5;
 print();
 
-
 // 1.2) Internally JS when running (hoisting)
-var x // -> undefined;
+var x;
 function print(){
-  console.log("My value is " + x)
+    console.log("My value is " + x)
 }
 
-x = 5;
-print();
+x = 5
+print()

@@ -3,18 +3,13 @@
 //------------------------------------------------------------------------------
 
 const fruits = ["apple", "banana", "orange"];
-const person = {
-  name: "John",
-  age: 30,
-  occupation: "Developer",
-};
 
 console.log("----------------------");
 
 // I) Traditional For Loop
 console.log("Using traditional for loop:");
 for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
+    console.log(fruits[i]);
 }
 
 console.log("----------------------");
@@ -22,23 +17,30 @@ console.log("----------------------");
 // II) For...of Loop
 console.log("Using for...of loop:"); //-> [1,2,3] -> num=1, num=2, num=3
 for (let item of fruits) {
-  console.log(item);
+    console.log(item);
 }
 
 console.log("----------------------");
 
 console.log("Using for...of loop and getting idx:");
 for (let [idx, item] of fruits.entries()) {
-  console.log(idx, item);
+    console.log(idx, item);
 }
 
 console.log("----------------------");
 
+const person = {
+    name: "John",
+    age: 30,
+    occupation: "Developer",
+};
+
+
 // III) For...in Loop
 console.log("Using for...in loop:");
 for (let key in person) {
-  // console.log(key + ": " + person[key]);
-  console.log(`${key}: ${person[key]}`);
+    // console.log(key + ": " + person[key]);
+    console.log(`${key}: ${person[key]}`);
 }
 
 // EXPLANATION:
@@ -54,15 +56,16 @@ console.log("----------------------");
 // III) ForEach Loop
 console.log("Using forEach loop:");
 
-fruits.forEach((item, idx) => {
-  console.log(item);
+const fruits2 = ["apple", "banana", "orange"];
+fruits2.forEach((item, idx) => {
+    console.log(item, idx);
 });
 
 console.log("----------------------");
 
 // Same as above
 const printItem = (item) => {
-  console.log(item);
+    console.log(item);
 }
 fruits.forEach(printItem);
 
@@ -70,11 +73,19 @@ console.log("----------------------");
 
 // Passing index in parameter for Callback function
 fruits.forEach((item, idx) => {
-  console.log(`${idx}: ${item}`);
+    console.log(`${idx}: ${item}`);
 });
 
 console.log("----------------------");
+const fruits3 = ["apple", "banana", "orange"];
+
 // Passing index in parameter for Callback function
-fruits.forEach((item, idx, array) => {
-  console.log(`${idx}: ${item} - ${array}`);
-});
+const funcionCallback = (item, idx, array) => {
+    console.log(`${idx}: ${item} - ${array}`);
+}
+
+function funcionOld(item, idx, array) {
+    console.log(`${idx}: ${item} - ${array}`);
+}
+
+fruits3.forEach(funcionCallback);
