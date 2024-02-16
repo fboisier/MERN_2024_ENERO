@@ -36,7 +36,7 @@ console.log("----------------------");
 
 const firstName = "John";
 console.log(firstName); // Output: John
-firstName = "Jane"; // TypeError: Assignment to constant variable.
+//firstName = "Jane"; // TypeError: Assignment to constant variable.
 
 // WARNING
 // "const" keyword -> variable cannot be reassigned.
