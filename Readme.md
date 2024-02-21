@@ -140,6 +140,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
 - **Lectures (Francisco Boisier)**
   - [Class 1: Advance JS - Part I](https://drive.google.com/drive/folders/1Y6UPJymOkTDvNG9iTXvDGvAgHIciklmb)
   - [Class 2: Advance JS - Part 2](https://drive.google.com/drive/folders/10Rm49Flqc6T178DaiQFIHI4IcMbEdD38)
+  - [Class 3: React Intro - Part 1](https://drive.google.com/drive/folders/1k19KVGqN4w7opbKxdC4CX0mrArzxHvDa?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
