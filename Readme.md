@@ -142,6 +142,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
   - [Class 2: Advance JS - Part 2](https://drive.google.com/drive/folders/10Rm49Flqc6T178DaiQFIHI4IcMbEdD38)
   - [Class 3: React Intro - Part 1](https://drive.google.com/drive/folders/1k19KVGqN4w7opbKxdC4CX0mrArzxHvDa?usp=drive_link)
   - [Class 4: React Intro - Part 2](https://drive.google.com/drive/folders/1dKYWCz1s-t-jrJpLpnMcZ3OXmvEZubGN?usp=drive_link)
+  - [Class 5: React States - Forms](https://drive.google.com/drive/folders/1RbfrFVqR-30jMlBzSaqEUXGXaKD_LETU?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
