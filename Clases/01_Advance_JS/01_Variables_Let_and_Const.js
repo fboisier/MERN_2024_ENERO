@@ -83,3 +83,14 @@ cosas(numeros);
 cosas(numeros);
 
 console.log(numeros);
+
+
+const nombre = 'Francisco';
+const apellido = 'Boisier';
+
+const usuario = {
+    nombre,
+    apellido
+}
+
+console.log(usuario)

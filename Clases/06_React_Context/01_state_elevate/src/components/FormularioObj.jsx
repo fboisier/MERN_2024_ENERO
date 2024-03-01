@@ -2,25 +2,36 @@ import { useState } from "react";
 
 const FormularioObj = () => {
 
+    const tiposUsuario = ['Administrador', 'Usuario', 'Invitado'];
+
     const initialState = {
         'email': '',
         'clave': '',
         'nombre': '',
+        'tipo': 'Invitado',
+        'recuerdame': false
     }
 
     const [login, setLogin] = useState(initialState);
     const [error, setError] = useState(initialState);
 
-    const { email, clave, nombre} = login;
+    const { email, clave, nombre, tipo} = login;
     const { email: emailError, clave: claveError, nombre: nombreError} = error;
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`Bienvenido, Correo: ${email} Clave: ${clave}`);
+        console.log(login);
     }
 
     const handleInput = (e) => {
-        setLogin({...login,[e.target.name]: e.target.value })
+
+        console.log(e)
+        if (e.target.type === 'checkbox'){
+            setLogin({...login,[e.target.name]: e.target.checked })
+        }else{
+            setLogin({...login,[e.target.name]: e.target.value })
+        }
+
 
         if ((e.target.name === 'nombre') && (e.target.value.length < 10 )){
             setError({...error, nombre: 'El campo tiene menos de 10 caracteres' })
@@ -76,6 +87,27 @@ const FormularioObj = () => {
                 />
                 <div className="form-text text-danger">{nombreError}</div>
             </div>
+
+            <div className="mb-3">
+                <label htmlFor="exampleInputNombre" className="form-label">Seleccionar Perfil</label>
+                <select value={tipo} name="tipo" className="form-select" onChange={handleInput}>
+                    {
+                        tiposUsuario.map((item, indice)=> 
+                            <option key={indice}>{item}</option>
+                        )
+                    }
+                </select>
+                <div className="form-text text-danger">{nombreError}</div>
+            </div>
+            <div className="mb-3">
+                <div className="form-check">
+                    <input className="form-check-input" onChange={handleInput} name="recuerdame" type="checkbox" value="" id="flexCheckDefault" />
+                    <label className="form-check-label" htmlFor="flexCheckDefault">
+                        Recuerdame
+                    </label>
+                </div>
+            </div>
+
             <button type="submit" className="btn btn-primary">Enviar Datos!!!</button>
         </form> 
     )
