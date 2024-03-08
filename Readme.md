@@ -145,6 +145,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
   - [Class 5: React States - Forms](https://drive.google.com/drive/folders/1RbfrFVqR-30jMlBzSaqEUXGXaKD_LETU?usp=drive_link)
   - [Class 6: React States - Extras](https://drive.google.com/drive/folders/1BihuADQwoA99j76iRt-vVeg_pXyjySW5?usp=drive_link)
   - [Class 7: React API - useEffect](https://drive.google.com/drive/folders/1_VqPIbnmaco2mWMnKAIDwbD5n1epzLAr?usp=drive_link)
+  - [Class 8: React Router](https://drive.google.com/drive/folders/1qWUOHM6RWdg0YXLs6iAFORSNH0gJsZ0X?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
