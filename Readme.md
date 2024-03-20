@@ -148,6 +148,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
   - [Class 8: React Router](https://drive.google.com/drive/folders/1qWUOHM6RWdg0YXLs6iAFORSNH0gJsZ0X?usp=drive_link)
   - [Class 9: Express](https://drive.google.com/drive/folders/1jKnsp6-mO3F1UxCfzm5jwm3FLB7MmzQk?usp=drive_link)
   - [Class 10: Express - Mongoose](https://drive.google.com/drive/folders/1Y7KtHTeBvIhqS88GrF71Qu_dNsKScU-r?usp=drive_link)
+  - [Class 11: FullStack - CRUD Part 1](https://drive.google.com/drive/folders/1t3YDvx0fjLKS_Y2K_4VCw1T9yBOfGVab?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
