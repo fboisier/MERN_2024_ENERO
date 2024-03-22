@@ -1,33 +1,50 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import useForm from "../hooks/useForm"
 import axios from "axios"
 import Swal from 'sweetalert2'
-import PropTypes from 'prop-types';
+import { useNavigate, useParams } from "react-router-dom"
 
 
-const PersonForm = ({updatePersons}) => {
+const PersonFormUpdate = () => {
+
+    const { id } = useParams();
+    const navegate = useNavigate()
 
     const initialValues = {
-        firstName:'',
-        lastName: '',
-        age: 18
+        firstName:'Cargando...',
+        lastName: 'Cargando...',
+        age: 0
     }
-    const {values: person, handleChange, clearData} = useForm(initialValues)
+
+    const {values: person, handleChange, setValues} = useForm(initialValues)
+
+    useEffect(()=>{
+        axios.get(`http://localhost:8000/api/person/${id}`)
+            .then(res => {
+                console.log(res.data.person)
+                setValues({
+                    firstName: res.data.person.firstName,
+                    lastName: res.data.person.lastName,
+                    age: res.data.person.age
+                })
+            })
+            .catch(err => console.log(err))
+    }, []);
+
+
     const [error, setError] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/api/person', person)
+        axios.put(`http://localhost:8000/api/person/${id}`, person)
             .then(res => {
                 console.log(res.data.person)
-                updatePersons(res.data.person)
-                clearData()
                 Swal.fire({
                     icon: "success",
-                    title: "Genial!",
-                    text: "Agregaste una persona!!",
+                    title: "Actualizado!",
+                    text: "Actualizaste una persona!!",
                 });
-                setError("")
+                navegate("/")
             })
             .catch(err => {
                 console.log(err)
@@ -51,12 +68,9 @@ const PersonForm = ({updatePersons}) => {
                 <input type="number" className="form-control" name="age" value={person.age} onChange={handleChange} />
             </div>
             <button type="submit" className="btn btn-primary mt-3">Submit</button>
+            <button type="button" className="btn btn-danger mt-3 ms-3" onClick={() => navegate("/")}>Cancelar - Volver</button>
         </form>
     )
 }
 
-PersonForm.propTypes = {
-    updatePersons: PropTypes.func
-}
-
-export default PersonForm
+export default PersonFormUpdate
