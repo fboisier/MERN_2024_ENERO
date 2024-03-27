@@ -150,6 +150,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
   - [Class 10: Express - Mongoose](https://drive.google.com/drive/folders/1Y7KtHTeBvIhqS88GrF71Qu_dNsKScU-r?usp=drive_link)
   - [Class 11: FullStack - CRUD Part 1](https://drive.google.com/drive/folders/1t3YDvx0fjLKS_Y2K_4VCw1T9yBOfGVab?usp=drive_link)
   - [Class 12: FullStack - CRUD Part 2](https://drive.google.com/drive/folders/1NoE5C401M2rAJUCKjrkUlMPS5mdidpva?usp=drive_link)
+  - [Class 13: FullStack - Jugadores](https://drive.google.com/drive/folders/1pS35wzZNaMnaFBTTnuMW8WYStRGWdWt-?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
