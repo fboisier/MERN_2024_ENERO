@@ -151,6 +151,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
   - [Class 11: FullStack - CRUD Part 1](https://drive.google.com/drive/folders/1t3YDvx0fjLKS_Y2K_4VCw1T9yBOfGVab?usp=drive_link)
   - [Class 12: FullStack - CRUD Part 2](https://drive.google.com/drive/folders/1NoE5C401M2rAJUCKjrkUlMPS5mdidpva?usp=drive_link)
   - [Class 13: FullStack - Jugadores](https://drive.google.com/drive/folders/1pS35wzZNaMnaFBTTnuMW8WYStRGWdWt-?usp=drive_link)
+  - [Class 14: FullStack - MERN Auth](https://drive.google.com/drive/folders/1bDe-7ApSgMuQSriMgRiycUpgHH0_K9nk?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
