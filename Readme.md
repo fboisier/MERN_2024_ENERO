@@ -154,6 +154,7 @@ Regarding the course, the main communication channels will be Zoom and Discord a
   - [Class 14: FullStack - MERN Auth](https://drive.google.com/drive/folders/1bDe-7ApSgMuQSriMgRiycUpgHH0_K9nk?usp=drive_link)
   - [Class 15: FullStack - MERN Deployment](https://drive.google.com/drive/folders/1X3UT0WvracFyRumaf-8Fjnq7xBKOYUvE?usp=drive_link)
   - [Class 16: FullStack - MERN Socket.IO](https://drive.google.com/drive/folders/154bZUUP7LkDYZrW_Ce6XkJkxxOIe48ij?usp=drive_link)
+  - [Class P&A: Git Avanzado](https://drive.google.com/drive/folders/1DakT3m26f0TA8C9SD7Mq0IKLBhyXdmuj?usp=drive_link)
 
 - **Tutorials (Jorge)**
 
